@@ -1,6 +1,6 @@
 <template>
     <BaseGrid :size="size" class="grid">
-        <SquaresTable v-for="square in size*size" :key="square"/>
+        <SquaresTable v-for="square in size*size" :key="size + '-' + square"/>
     </BaseGrid>
 </template>
 
