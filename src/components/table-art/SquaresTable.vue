@@ -1,5 +1,5 @@
 <template>
-    <BaseSquare @click="changeColor" :bgColor="bgColor"/>
+    <BaseSquare @click="changeColor" @dragenter="changeColor" :bgColor="bgColor" />
 </template>
 
 <script>
