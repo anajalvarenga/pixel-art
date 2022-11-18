@@ -1,4 +1,7 @@
-# pixel-art
+# Pixel Art
+![project pixel-art](./src/assets/project-image.png)
+
+> Pixel Art is a project that allows the user to simulate painting on the computer by using the mouse.
 
 ## Project setup
 ```
