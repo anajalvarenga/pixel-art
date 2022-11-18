@@ -1,5 +1,5 @@
 <template>
-    <div style="{backgroundColor: bgColor}"></div>
+    <div :style="{backgroundColor: bgColor}"></div>
 </template>
 
 <script>
