@@ -46,6 +46,7 @@ section {
     display: flex;
     align-items: center;
     gap: 12px;
+    max-width: -webkit-fill-available;
 }
 
 .square-selected-color {

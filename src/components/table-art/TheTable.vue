@@ -1,8 +1,5 @@
 <template>
-    <BaseGrid :size="size" :style="{
-        width: '40vw',
-        height: '40vw'
-    }">
+    <BaseGrid :size="size" class="grid">
         <SquaresTable v-for="square in size*size" :key="square"/>
     </BaseGrid>
 </template>
@@ -11,13 +8,23 @@
 import SquaresTable from './SquaresTable.vue';
 
 export default {
+    props: ['size'],
     components: {
         SquaresTable
     },
-    data() {
-        return {
-            size: 12
-        };
-    }
 }
 </script>
+
+<style scoped>
+.grid {
+    width: 40vw;
+    height: 40vw
+}
+
+@media (max-width: 600px) {
+    .grid {
+    width: 80vw;
+    height: 80vw
+}
+}
+</style>
