@@ -1,5 +1,8 @@
 <template>
-    <BaseGrid :size="size">
+    <BaseGrid :size="size" :style="{
+        width: '40vw',
+        height: '40vw'
+    }">
         <SquaresTable v-for="square in size*size" :key="square"/>
     </BaseGrid>
 </template>

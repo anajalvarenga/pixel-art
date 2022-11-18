@@ -12,8 +12,6 @@ export default {
 
 <style scoped>
 .grid {
-    width: 40vw;
-    height: 40vw;
     display: grid;
     grid-template-rows: auto;
 }
