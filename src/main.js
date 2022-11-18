@@ -6,7 +6,7 @@ import BaseGrid from './components/UI/BaseGrid.vue';
 
 const app = createApp(App);
 
-app.component('base-square', BaseSquare);
-app.component('base-grid', BaseGrid);
+app.component('BaseSquare', BaseSquare);
+app.component('BaseGrid', BaseGrid);
 
 app.mount('#app');
