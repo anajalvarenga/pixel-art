@@ -11,6 +11,25 @@ export default {
   components: {
     TheTable,
     TheColorPalette
-  }
+  },
+  data() {
+    return {
+      paintColor: '#020104'
+    };
+  },
+  provide() {
+    return {
+      setPaintColor: this.setPaintColor,
+      getPaintColor: this.getPaintColor
+    };
+  },
+  methods: {
+    setPaintColor(color) {
+      this.paintColor = color;
+    },
+    getPaintColor() {
+      return this.paintColor;
+    }
+  },
 }
 </script>

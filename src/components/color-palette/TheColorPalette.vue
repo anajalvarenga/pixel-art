@@ -17,6 +17,7 @@
 
 <script>
 export default {
+    inject: ['setPaintColor'],
     data() {
         return {
             columns: 14,
@@ -34,6 +35,7 @@ export default {
     methods: {
         setSelectedColor(color) {
             this.selectedColor = color;
+            this.setPaintColor(color);
         }
     }
 }

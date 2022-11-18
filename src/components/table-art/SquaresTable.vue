@@ -4,6 +4,7 @@
 
 <script>
 export default {
+    inject: ['getPaintColor'],
     data() {
         return {
             bgColor: 'white'
@@ -11,7 +12,7 @@ export default {
     },
     methods: {
         changeColor() {
-            this.bgColor = 'red';
+            this.bgColor = this.getPaintColor();
         }
     }
 }
