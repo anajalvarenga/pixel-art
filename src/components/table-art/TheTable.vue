@@ -1,15 +1,15 @@
 <template>
     <BaseGrid :size="size">
-        <TheSquare v-for="square in size*size" :key="square"/>
+        <SquaresTable v-for="square in size*size" :key="square"/>
     </BaseGrid>
 </template>
 
 <script>
-import TheSquare from './TheSquare.vue';
+import SquaresTable from './SquaresTable.vue';
 
 export default {
     components: {
-        TheSquare
+        SquaresTable
     },
     data() {
         return {
