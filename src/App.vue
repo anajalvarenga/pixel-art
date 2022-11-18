@@ -45,6 +45,7 @@ export default {
 <style>
 body {
   margin: 0;
+  background-color: #c2bfc2;
 }
 
 header {
