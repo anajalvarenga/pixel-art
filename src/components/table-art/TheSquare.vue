@@ -1,5 +1,5 @@
 <template>
-    <div @click="changeColor" :style="{backgroundColor: bgColor}"></div>
+    <BaseSquare @click="changeColor" :bgColor="bgColor"/>
 </template>
 
 <script>
@@ -16,11 +16,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-div {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ccc;
-}
-</style>
