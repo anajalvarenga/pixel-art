@@ -1,5 +1,6 @@
 <template>
   <header>
+    <h1>Pixel Art</h1>
     <TheColorPalette />
     <TheGridSelector v-model.number="selectedGrid" />
   </header>
@@ -53,10 +54,16 @@ header {
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 16px;
   background-color: #eef0f2;
   padding: 16px 32px;
   margin-bottom: 8px;
+}
+
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  margin-right: auto;
 }
 
 .full-table {
